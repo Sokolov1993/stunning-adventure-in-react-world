@@ -1,0 +1,14 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 18px 0px 0px 0px;
+  max-width: 500px;
+  width: 100%;
+  height: 300px;
+  background-color: rgba($color: aliceblue, $alpha: 0.7);
+  text-align: center;
+  box-shadow: 4px 2px 20px black;
+}
