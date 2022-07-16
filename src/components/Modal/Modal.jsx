@@ -13,12 +13,12 @@ const Modal = ({ counter, clickHandler }) => {
     }
   };
 
-  useEffect(openFunc);
+  useEffect(openFunc, [counter]);
 
   return isOpenModal ? (
-    <div className={StylesModal.modal} onClick={clickHandler}>
+    <div className={StylesModal.modal}>
       <h2>I`m a modal window!</h2>
-      <Button>CLOSE</Button>
+      <Button onClick={clickHandler}>CLOSE</Button>
     </div>
   ) : null;
 };

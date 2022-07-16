@@ -7,8 +7,8 @@ import CounterStyles from './Counter.module.scss';
 const Counter = () => {
   const [counter, setCounter] = useState(0);
 
-  const onClickCloseHandler = (event) => {
-    if (event.target.textContent === 'CLOSE') setCounter(0);
+  const onClickCloseHandler = () => {
+    setCounter(0);
   };
 
   const onClickIncrementHandler = () => {
