@@ -6,9 +6,7 @@ const Modal = ({ counter, clickHandler }) => {
   const [isOpenModal, setOpenModal] = useState(false);
 
   const openFunc = () => {
-    if (counter < -5) {
-      setOpenModal(true);
-    } else if (counter > 5) {
+    if (counter < -5 || counter > 5) {
       setOpenModal(true);
     } else {
       setOpenModal(false);

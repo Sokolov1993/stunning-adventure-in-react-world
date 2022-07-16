@@ -2,7 +2,7 @@ import React from 'react';
 
 import ButtonStyles from './Button.module.scss';
 
-const Button = ({ children }) => {
+const Button = ({ children, onClick }) => {
   let styleName;
 
   switch (children) {
@@ -17,7 +17,11 @@ const Button = ({ children }) => {
       break;
   }
 
-  return <button className={ButtonStyles[styleName]}>{children}</button>;
+  return (
+    <button onClick={onClick} className={ButtonStyles[styleName]}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;
